@@ -1,0 +1,35 @@
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.ico" />
+<title>Check your MMR!</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div style="text-align:center;" class="container" id="firstmain">
+<h1 id="description" align="center">
+League of Legends <br/> MMR Checker	
+</h1>
+
+
+<input type="text" name = "username" placeholder="Summoner name..." value = "" id="summoner" class = "summonername" align="left" onkeypress="handle(event)"></input>
+<select id="regionselect">
+  <option value="NA1" >NA</option>
+  <option value="EUW1" >EUW</option>
+  <option value="EUN1">EUNE</option>
+  <option value="BR1" >BR</option>
+  <option value="KR" >KR</option>
+  <option value="OC1" >OCE</option>
+  <option value="TU1" >TR</option>
+  <option value="LA1" >LAN</option>
+  <option value="LA2" >LAS</option>
+  <option value="JP1" >JP</option>
+  <option value="RU" >RU</option>
+</select>
+<button type="submit" id="search-submit" onclick="search()"><span>Search</span></button>
+</div>
+
+</body>
+</html>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
